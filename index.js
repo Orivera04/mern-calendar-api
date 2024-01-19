@@ -9,7 +9,7 @@ app.use( express.static('public'));
 
 
 // Rutas
-// TODO: auth // crear, login, renew
+app.use('/api/auth', require('./routes/auth'));
 
 
 app.listen(process.env.PORT, () => {
